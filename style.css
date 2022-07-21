@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Nunito:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+nav .navbar {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(206, 206, 206);
+
+}
+
+nav .navbar .aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+
+nav .navbar .aside .logo {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+nav .navbar .aside .list {
+    width: 400px;
+}
+
+nav .navbar .list ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav .navbar .list ul li {
+    list-style: none;
+}
+
+nav .navbar .list ul a {
+    text-decoration: none;
+    color: rgb(187, 184, 184);
+}
+
+nav .navbar .list ul a:hover {
+    color: rgb(218, 82, 20);
+    font-weight: 700;
+}
+
+.hamburger {
+    height: 40px;
+    width: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav .navbar .nav-side {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar .nav-side .fa-solid {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section-container {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-container .first-image {
+    margin-top: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.section-container .first-image .img222 {
+    width: 100%;
+}
+
+.section-container .first-image .img222 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-container .btm-images {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.section-container .btm-images .box {
+    width: 100%;
+    margin-left: 10px;
+    transition: all ease;
+}
+
+.section-container .btm-images .box:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.bx {
+    opacity: .6;
+}
+
+.section-container .btm-images img {
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.section-container #description {
+    width: 65%;
+    padding: 20px;
+}
+
+.section-container #description .d-text span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 9px;
+    color: rgb(218, 82, 20);
+}
+
+.section-container #description .d-text h1 {
+    font-size: 23px;
+    text-transform: capitalize;
+    width: 300px;
+    margin: 10px 0 15px 0;
+}
+
+.section-container #description .d-text p {
+    width: 320px;
+    color: rgb(138, 135, 135);
+    font-size: 12px;
+}
+
+.section-container #description .div2 {
+    margin: 10px 0;
+    width: 200px;
+}
+
+.section-container #description .div2 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section-container #description .div2 p>span {
+    font-size: 8px;
+    font-weight: 600;
+    position: relative;
+    top: -1px;
+    padding: 2px;
+    background-color: rgb(231, 219, 219);
+    color: rgb(224, 117, 67);
+    border-radius: 2px;
+    opacity: .7;
+}
+
+.section-container #description .div2 del {
+    color: rgb(201, 198, 198);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.section-container #description .qty {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    left: -20px;
+    top: -20px;
+}
+
+.section-container #description .qty .a {
+    color: rgb(218, 82, 20);
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.section-container #description .qty .b {
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.section-container #description .qty button {
+    background-color: green;
+    height: 2.2rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.section-container #description .qty button i {
+    margin-right: 10px;
+}
+
+#list {
+    background-color: #eee;
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    width: 200px;
+    height: 350px;
+    padding: 30px;
+    z-index: 2;
+    animation: comeIn .7s linear alternate;
+
+}
+
+footer {
+    position: relative;
+    top: 55px;
+    height: 20vh;
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+footer div {
+    height: 100%;
+    background-color: rgb(19, 91, 163);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+    display: none;
+}
+
+@keyframes comeIn {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+#list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#list li {
+    list-style: none;
+}
+
+#list li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 2px 5px;
+    border: 1px solid black;
+    color: #000;
+}
+
+#list li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 1007px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger #list {
+        display: none;
+    }
+
+    .navbar .aside .list ul {
+        display: none;
+    }
+
+
+    nav .navbar .aside {
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    nav .navbar .nav-side .fa-solid {
+        font-size: 1.2rem;
+    }
+
+    .section-container {
+        width: 90%;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-container .first-image {
+        margin-top: 20px;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .section-container .first-image {
+        margin-top: 20px;
+        width: 70%;
+    }
+
+
+    .section-container #description {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .section-container #description .d-text span {
+        letter-spacing: 10px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .section-container #description .d-text h1 {
+        font-size: 28px;
+        text-transform: capitalize;
+        width: 300px;
+        margin: 10px 0 15px 0;
+    }
+
+    .section-container #description .d-text p {
+        width: 400px;
+        color: rgb(100, 98, 98);
+        font-size: 16px;
+    }
+
+    .section-container #description .div2 {
+        margin: 10px 0;
+        width: 250px;
+    }
+
+    .section-container #description .div2 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .section-container #description .div2 del {
+        color: rgb(201, 198, 198);
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .section-container #description .qty {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        left: 0;
+        top: 0;
+    }
+
+    .section-container #description .qty .a {
+        font-size: 1.3rem;
+    }
+
+    .section-container #description .qty .b {
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
+
+    .section-container #description .qty button {
+        line-height: 2.3rem;
+        width: 60%;
+        height: 100%;
+        font-size: 0.9rem;
+        padding: 5px;
+
+    }
+
+    .section-container #description .qty button i {
+        margin-right: 5px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav .navbar {
+        width: 92%;
+    }
+
+    .navbar .aside .list ul {
+        display: none;
+    }
+
+    nav .navbar .aside {
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    nav .navbar .nav-side img {
+        display: none;
+    }
+
+    nav .navbar .nav-side .fa-solid {
+        font-size: 1.2rem;
+        margin-left: 50px;
+    }
+
+    .section-container {
+        width: 90%;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-container .first-image {
+        margin-top: 20px;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .section-container .first-image {
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .section-container #description {
+        width: 100%;
+    }
+
+    .section-container #description .d-text span {
+        letter-spacing: 10px;
+        font-size: 90%;
+        width: 100%;
+    }
+
+    .section-container #description .d-text h1 {
+        font-size: 2.2rem;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .section-container #description .d-text p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .section-container #description .div2 {
+        width: 50%;
+
+    }
+
+    .section-container #description .qty {
+        width: 80%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .section-container #description .qty .a {
+
+        font-size: 1.3rem;
+    }
+
+    .section-container #description .qty .b {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .section-container #description .qty button {
+        line-height: 2.3rem;
+        width: 60%;
+        height: 100%;
+        font-size: 0.9rem;
+        padding: 5px;
+
+    }
+
+    .section-container #description .qty button i {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:350px) {
+    nav .navbar .nav-side .fa-solid {
+        font-size: 1.1rem;
+        margin-left: 35px;
+    }
+}
