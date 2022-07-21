@@ -245,26 +245,6 @@ nav .navbar .nav-side .fa-solid {
 
 }
 
-footer {
-    position: relative;
-    top: 55px;
-    height: 20vh;
-    padding: 50px;
-    width: 80%;
-    margin: 0 auto;
-
-}
-
-footer div {
-    height: 100%;
-    background-color: rgb(19, 91, 163);
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    padding: 30px;
-    display: none;
-}
-
 @keyframes comeIn {
     0% {
         transform: scale(0.5);
