@@ -88,8 +88,11 @@ nav .navbar .nav-side .fa-solid {
     font-size: 1rem;
     cursor: pointer;
 }
-
+section{
+    background-color: #eee;
+}
 .section-container {
+   
     margin: 100px auto;
     width: 80%;
     position: absolute;
