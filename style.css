@@ -14,6 +14,7 @@ nav {
     display: flex;
     position: fixed;
     z-index: 2;
+    background-color: #fff;
 }
 
 nav .navbar {
@@ -132,6 +133,9 @@ nav .navbar .nav-side .fa-solid {
     width: 100%;
     margin-left: 10px;
     transition: all .7s;
+}
+.section-container .btm-images .box:focus{
+    outline: none;
 }
 
 .section-container .btm-images img:hover {
@@ -312,6 +316,9 @@ nav .navbar .nav-side .fa-solid {
         right: 40px;
         top: 25px;
     }
+    .hamburger:focus{
+        outline: none;
+    }
 
     #hammX {
         display: none;
@@ -344,7 +351,7 @@ nav .navbar .nav-side .fa-solid {
     }
 
     .section-container {
-        top: 100%;
+        top: 75%;
         width: 90%;
         margin: 60px auto;
         display: flex;
