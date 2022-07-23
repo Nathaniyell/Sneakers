@@ -12,6 +12,8 @@ nav {
     width: 100%;
     height: 80px;
     display: flex;
+    position: fixed;
+    z-index: 2;
 }
 
 nav .navbar {
@@ -21,15 +23,16 @@ nav .navbar {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(206, 206, 206);
-   
+
 
 }
+
 nav .navbar .aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    
+
 }
 
 nav .navbar .aside .logo {
@@ -78,7 +81,6 @@ nav .navbar .nav-side {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: red; */
 }
 
 nav .navbar .nav-side .fa-solid {
@@ -96,7 +98,7 @@ nav .navbar .nav-side .fa-solid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: blue; */
+
 }
 
 .section-container .first-image {
@@ -211,13 +213,15 @@ nav .navbar .nav-side .fa-solid {
     left: -20px;
     top: -20px;
 }
-.section-container #description .qty .soke{
+
+.section-container #description .qty .soke {
     width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
 .section-container #description .qty .a {
     color: rgb(218, 82, 20);
     font-weight: bolder;
@@ -256,10 +260,10 @@ nav .navbar .nav-side .fa-solid {
     padding: 30px;
     z-index: 2;
     animation: comeIn .4s linear alternate;
-    
+
 }
 
- @keyframes comeIn {
+@keyframes comeIn {
     0% {
         transform: scale(0.5);
     }
@@ -272,7 +276,7 @@ nav .navbar .nav-side .fa-solid {
         transform: scale(1)
     }
 }
- 
+
 
 #list ul {
     display: flex;
@@ -308,11 +312,13 @@ nav .navbar .nav-side .fa-solid {
         right: 40px;
         top: 25px;
     }
-    #hammX{
+
+    #hammX {
         display: none;
         position: relative;
-       
+
     }
+
     .hamburger #list {
         display: none;
     }
@@ -326,16 +332,19 @@ nav .navbar .nav-side .fa-solid {
         justify-content: space-around;
         width: 70%;
     }
+
     nav .navbar .nav-side {
         width: 90%;
         position: relative;
         left: 120px;
     }
+
     nav .navbar .nav-side .fa-solid {
         font-size: 1.2rem;
     }
 
     .section-container {
+        top: 100%;
         width: 90%;
         margin: 60px auto;
         display: flex;
@@ -359,7 +368,6 @@ nav .navbar .nav-side .fa-solid {
 
 
     .section-container #description {
-        /* background-color: blue; */
         width: 70%;
         display: flex;
         flex-direction: column;
@@ -449,14 +457,17 @@ nav .navbar .nav-side .fa-solid {
         margin-right: 5px;
     }
 }
-@media (max-width: 900px){
-    nav .navbar .nav-side img{
+
+@media (max-width: 900px) {
+    nav .navbar .nav-side img {
         display: none;
     }
+
     .section-container .btm-images img {
         height: 80%;
     }
 }
+
 @media (max-width: 685px) {
     .section-container #description {
         width: 90%;
@@ -464,17 +475,18 @@ nav .navbar .nav-side .fa-solid {
     }
 }
 
- @media (max-width: 640px) {
-     .hamburger {
+@media (max-width: 640px) {
+    .hamburger {
         display: block;
         position: absolute;
         top: 25px;
         right: 0;
     }
-    .hamburger #list{
+
+    .hamburger #list {
         right: 16px;
     }
-    
+
     nav .navbar {
         width: 92%;
     }
@@ -487,46 +499,51 @@ nav .navbar .nav-side .fa-solid {
         width: 70%;
     }
 
-    nav .navbar .nav-side{
+    nav .navbar .nav-side {
         left: 50px;
     }
 
     nav .navbar .nav-side .fa-solid {
         font-size: 1.2rem;
-       
-    }   
+
+    }
 }
-@media (max-width: 465px){
-    nav .navbar .nav-side{
+
+@media (max-width: 465px) {
+    nav .navbar .nav-side {
         left: 30px;
     }
-    .section-container #description .qty{
-        width: 100%;
-      height: 100%;
-      text-align: center;
-      display: block;
 
-  }
-  .section-container #description .qty .soke{
-      margin: 0 auto;
-  }
-  .section-container #description .qty button{
-      width: 60%;
-      height: 40px;
-      margin: 30px auto 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-  }
+    .section-container #description .qty {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+
+    }
+
+    .section-container #description .qty .soke {
+        margin: 0 auto;
+    }
+
+    .section-container #description .qty button {
+        width: 60%;
+        height: 40px;
+        margin: 30px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width:365px) {
-    nav .navbar .nav-side{
+    nav .navbar .nav-side {
         left: 10px;
     }
+
     nav .navbar .nav-side .fa-solid {
         font-size: 1rem;
         margin-left: 0;
     }
-    
+
 }
