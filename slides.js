@@ -12,10 +12,15 @@ $(document).ready(function () {
         $('#firstImage').attr('src', 'images/img5.jpg')
     });
 
-    $(".hamburger").click(function () {
+    $("#hamm").click(function () {
+        $("#hamm").css('display', 'none')
         $("#list").css('display', 'block')
-        $("#list").mouseleave(() => {
-            $("#list").fadeOut(1500)
-        })
+        $("#hammX").css('display', 'block')
     });
 });
+$('#hammX').click(function () {
+    $("#list").css('display', 'none')
+    $("#hamm").css('display', 'block')
+    $("#hammX").css('display', 'none')
+
+})
