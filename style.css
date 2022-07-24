@@ -15,6 +15,7 @@ nav {
     position: fixed;
     z-index: 2;
     background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2)
 }
 
 nav .navbar {
@@ -23,9 +24,6 @@ nav .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(206, 206, 206);
-
-
 }
 
 nav .navbar .aside {
@@ -88,17 +86,20 @@ nav .navbar .nav-side .fa-solid {
     font-size: 1rem;
     cursor: pointer;
 }
-section{
-    background-color: #eee;
+
+section {
+    background-color: #fffff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10px;
 }
+
 .section-container {
-   
     margin: 100px auto;
     width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,9 +137,6 @@ section{
     width: 100%;
     margin-left: 10px;
     transition: all .7s;
-}
-.section-container .btm-images .box:focus{
-    outline: none;
 }
 
 .section-container .btm-images img:hover {
@@ -266,24 +264,7 @@ section{
     height: 350px;
     padding: 30px;
     z-index: 2;
-    animation: comeIn .4s linear alternate;
-
 }
-
-@keyframes comeIn {
-    0% {
-        transform: scale(0.5);
-    }
-
-    50% {
-        transform: scale(0.7);
-    }
-
-    100% {
-        transform: scale(1)
-    }
-}
-
 
 #list ul {
     display: flex;
@@ -319,14 +300,9 @@ section{
         right: 40px;
         top: 25px;
     }
-    .hamburger:focus{
-        outline: none;
-    }
-
     #hammX {
         display: none;
         position: relative;
-
     }
 
     .hamburger #list {
@@ -353,10 +329,13 @@ section{
         font-size: 1.2rem;
     }
 
+    section {
+        height: 150vh;
+    }
+
     .section-container {
-        top: 75%;
-        width: 90%;
-        margin: 60px auto;
+        position: absolute;
+        top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
